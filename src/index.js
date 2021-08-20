@@ -2,10 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Router from "./Router";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter } from "react-router-dom";
+
 ReactDOM.render(
-  <React.Fragment>
+  <BrowserRouter>
     <Router />
-  </React.Fragment>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
