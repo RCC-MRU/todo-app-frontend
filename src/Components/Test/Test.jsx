@@ -4,7 +4,7 @@ import "./Test.css";
 const Test = () => {
   return (
     <div>
-      <h1>this is test file</h1>
+      <h1 className="h1-style">this is test file</h1>
     </div>
   );
 };
