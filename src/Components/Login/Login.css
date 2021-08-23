@@ -1,1 +1,32 @@
 /*  */
+
+.white-box{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 800px;
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+
+}
+
+.main-row{
+    width: 100%;
+}
+
+.form-group{
+padding-bottom: 30px;
+
+}
+
+#heading{
+    margin: auto;
+;
+   
+}
+#exampleFormControlInput1{
+    width:400px;
+    margin: auto;
+    border:3px solid #90A9FF ;
+}
+
