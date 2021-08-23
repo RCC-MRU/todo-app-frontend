@@ -1,4 +1,5 @@
 import React from 'react'
+import './Login.css'
 
 
 const Login = () => {
@@ -7,11 +8,14 @@ const Login = () => {
     <div className="container">
       <div className="login-left">
         <h2>Get Started</h2>
+        <br/>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eius quidem in blanditiis quasi consequatur, laudantium officiis nam praesentium perspiciatis architecto itaque non, debitis facere exercitationem illum incidunt adipisci accusamus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eius quidem in blanditiis quasi consequatur, laudantium off
         </p>
-        <h2>Signup</h2>
-        <h2>Login</h2>
+        <br/>
+        <button type="button" class="btn btn-primary btn-lg btn-block">Sign Up</button>
+        <br/>
+        <button type="button" class="btn btn-primary btn-lg btn-block">Login</button>
       </div>
 
       <div className="login-right">
