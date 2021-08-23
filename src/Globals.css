@@ -1,0 +1,8 @@
+:root {
+  --hue-color: 200;
+  --blue-color: hsl(var(--hue-color), 100%, 93%);
+}
+
+html, body {
+  background-color: var(--blue-color);
+}
