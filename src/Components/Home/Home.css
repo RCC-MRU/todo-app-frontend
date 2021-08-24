@@ -1,5 +1,3 @@
-
-
 .container{
     margin-top: 1rem;
     display: flex;
@@ -12,6 +10,10 @@
     padding-right: 50px;
     padding-left: 20px;
 }  
+
+.login-left button{
+    border-radius: 60px ;
+}
 
 .login-right{
     padding-right: 20px; 
