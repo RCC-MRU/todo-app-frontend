@@ -1,1 +1,21 @@
-/*  */
+.container{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    padding:10rem ;
+    background-color: white;
+}
+
+.login-left{
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+.login-right{
+    padding-right: 20px;
+}
+
+.login-right img{
+    height:350px;
+    width:400px; 
+}
