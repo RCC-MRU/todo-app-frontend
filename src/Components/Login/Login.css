@@ -1,51 +1,49 @@
 /*  */
 
-.white-box{
-    background-color: rgb(255, 255, 255);
-    height: 500px;
-    width: 800px;
-    display: grid;
-    place-items: center;
-    margin-top: 100px;
-
+.white-box {
+  background-color: rgb(255, 255, 255);
+  height: 70vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
 }
-.wrap{
-    display: grid;
-    place-items: center;
-}
-.main-row{
-    width: 100%;
-}
-
-.form-group{
-padding-bottom: 20px;
-
+/* .wrap {
+  display: grid;
+  place-items: center;
+} */
+.main-row {
+  width: 100%;
 }
 
-.login-button{
-    background-color: #90A9FF !important;
-    border-radius: 60px !important;
-    padding: 20px !important;
-    border: none !important;
-    font-weight: 200px;
-    font-size: 20px;
+.form-group {
+  padding-bottom: 20px;
 }
 
-#forgot-password{
-    display: flex;
-    justify-content: flex-end;
-    color:rgb(85, 85, 255);
-    margin-right: 15px !important;
+.login-button {
+  background-color: #90a9ff !important;
+  border-radius: 60px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  border: none !important;
+  font-weight: 400px !important;
+  font-size: 18px !important;
 }
 
-#heading{
-    margin: auto;
-;
-   
-}
-#exampleFormControlInput1{
-    width:400px;
-    margin: auto;
-    border:3px solid #90A9FF ;
+#forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(85, 85, 255);
+  margin-right: 15px !important;
 }
 
+#heading {
+  margin: auto;
+}
+#exampleFormControlInput1 {
+  width: 400px;
+  margin: auto;
+  border: 3px solid #90a9ff;
+}
