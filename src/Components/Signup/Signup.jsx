@@ -3,7 +3,7 @@ import "./Signup.css";
 const Signup = () => {
   return (
     <div>
-      <div class="container wrap ">
+      <div class="container ">
         <div class=" white-box">
           <div class="row main-signup-row">
             <div class="col-md-7 ">

@@ -5,12 +5,12 @@ import { MdExitToApp } from "react-icons/md";
 const Login = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg  bg-nav">
-        <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-lg  bg-nav">
+        <a className="navbar-brand" href="#">
           RCC TODO APP
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
@@ -18,62 +18,60 @@ const Login = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <div class="user-account">
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <div className="user-account">
               <FaUserCircle size={35} />
             </div>
-            <a class="nav-link text-white" id="" href="#">
+            <a className="nav-link text-white" id="" href="#">
               Username
             </a>
-            <div class="logout">
+            <div className="logout">
               <MdExitToApp size={35} />
             </div>
-            <a class="nav-link text-white" href="#">
+            <a className="nav-link text-white" href="#">
               Logout
             </a>
           </div>
         </div>
       </nav>
-      <div class="container ">
-        <div class=" white-box">
-          <div class="row main-row">
-            <div class="col-md-7 ">
-              <div className="container">
-                <form>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder="Username"
-                    ></input>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder="Password"
-                    ></input>
-                    <a id="forgot-password" href="#">
-                      forgot Password?
-                    </a>
-                  </div>
-                  <div className="text-center ">
-                    <button type="submit" class="text-white login-button ">
-                      Login
-                    </button>
-                  </div>
-                </form>
-              </div>
+      <div className="container d-grid place-item-center">
+        <div className=" white-box">
+          <div className="row main-row">
+            <div className="col-md-6 m-auto ">
+              <form>
+                <div className="form-group">
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Username"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Password"
+                  ></input>
+                  <a id="forgot-password" href="#">
+                    Forgot Password?
+                  </a>
+                </div>
+                <div className="text-center ">
+                  <button type="submit" class="text-white login-button ">
+                    Login
+                  </button>
+                </div>
+              </form>
             </div>
 
-            <div class="col-md-5">
+            <div className="col-md-6 m-auto p-auto">
               <img
-                class="login-image"
+                className="login-image"
                 src={process.env.PUBLIC_URL + "/images/loginImage.svg"}
               />
             </div>
