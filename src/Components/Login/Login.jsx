@@ -37,39 +37,45 @@ const Login = () => {
           </div>
         </div>
       </nav>
-      <div class="container wrap ">
+      <div class="container ">
         <div class=" white-box">
           <div class="row main-row">
             <div class="col-md-7 ">
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Username"
-                ></input>
+              <div className="container">
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Username"
+                    ></input>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Password"
+                    ></input>
+                    <a id="forgot-password" href="#">
+                      forgot Password?
+                    </a>
+                  </div>
+                  <div className="text-center ">
+                    <button type="submit" class="text-white login-button ">
+                      Login
+                    </button>
+                  </div>
+                </form>
               </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Password"
-                ></input>
-                <a id="forgot-password" href="#">
-                  forgot Password?
-                </a>
-              </div>
-
-              <button
-                type="button"
-                class="btn btn-primary login-button m-auto px-5   d-flex justify-content-center"
-              >
-                Login
-              </button>
             </div>
+
             <div class="col-md-5">
-              <img class="login-image" src={process.env.PUBLIC_URL + "/images/loginImage.svg"} />
+              <img
+                class="login-image"
+                src={process.env.PUBLIC_URL + "/images/loginImage.svg"}
+              />
             </div>
           </div>
         </div>
