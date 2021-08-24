@@ -1,29 +1,87 @@
-import React from 'react'
-import './Login.css'
-
-
+import React from "react";
+import "./Login.css";
+import { FaUserCircle } from "react-icons/fa";
+import { MdExitToApp } from "react-icons/md";
 const Login = () => {
   return (
-    <React.Fragment>
-    <div className="container">
-      <div className="login-left">
-        <h2>Get Started</h2>
-        <br/>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eius quidem in blanditiis quasi consequatur, laudantium officiis nam praesentium perspiciatis architecto itaque non, debitis facere exercitationem illum incidunt adipisci accusamus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eius quidem in blanditiis quasi consequatur, laudantium off
-        </p>
-        <br/>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Sign Up</button>
-        <br/>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Login</button>
-      </div>
+    <div>
+      <nav class="navbar navbar-expand-lg  bg-nav">
+        <a class="navbar-brand" href="#">
+          RCC TODO APP
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <div class="user-account">
+              <FaUserCircle size={35} />
+            </div>
+            <a class="nav-link text-white" id="" href="#">
+              Username
+            </a>
+            <div class="logout">
+              <MdExitToApp size={35} />
+            </div>
+            <a class="nav-link text-white" href="#">
+              Logout
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="container ">
+        <div class=" white-box">
+          <div class="row main-row">
+            <div class="col-md-7 ">
+              <div className="container">
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Username"
+                    ></input>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Password"
+                    ></input>
+                    <a id="forgot-password" href="#">
+                      forgot Password?
+                    </a>
+                  </div>
+                  <div className="text-center ">
+                    <button type="submit" class="text-white login-button ">
+                      Login
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
 
-      <div className="login-right">
-        <img src="https://images.unsplash.com/photo-1618588507085-c79565432917?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt=""/>
+            <div class="col-md-5">
+              <img
+                class="login-image"
+                src={process.env.PUBLIC_URL + "/images/loginImage.svg"}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    </React.Fragment>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
