@@ -9,14 +9,33 @@
     margin-top: 100px;
 
 }
-
+.wrap{
+    display: grid;
+    place-items: center;
+}
 .main-row{
     width: 100%;
 }
 
 .form-group{
-padding-bottom: 30px;
+padding-bottom: 20px;
 
+}
+
+.login-button{
+    background-color: #90A9FF !important;
+    border-radius: 60px !important;
+    padding: 20px !important;
+    border: none !important;
+    font-weight: 200px;
+    font-size: 20px;
+}
+
+#forgot-password{
+    display: flex;
+    justify-content: flex-end;
+    color:rgb(85, 85, 255);
+    margin-right: 15px !important;
 }
 
 #heading{

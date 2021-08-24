@@ -3,7 +3,7 @@ import "./Login.css";
 const Login = () => {
   return (
     <div>
-      <div class="container m-auto p-0 d-grid place-item-center ">
+      <div class="container wrap ">
         <div class=" white-box">
           <div class="row main-row">
             <div class="col-md-7 ">
@@ -22,8 +22,13 @@ const Login = () => {
                   id="exampleFormControlInput1"
                   placeholder="Password"
                 ></input>
+                 <a id="forgot-password" href="#">forgot Password?</a>
               </div>
-              <button type="button" class="btn btn-primary m-auto px-5 rounded  d-flex justify-content-center">
+             
+              <button
+                type="button"
+                class="btn btn-primary login-button m-auto px-5   d-flex justify-content-center"
+              >
                 Login
               </button>
             </div>
