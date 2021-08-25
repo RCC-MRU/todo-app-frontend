@@ -1,5 +1,5 @@
 .container{
-    margin-top: 1rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
     padding:10rem ;
@@ -20,6 +20,7 @@
 }  
   
 .login-right img{
-    height:350px;
-    width:400px; 
+    height:420px;
+    width:450px; 
+    padding-left: 60px;
 }

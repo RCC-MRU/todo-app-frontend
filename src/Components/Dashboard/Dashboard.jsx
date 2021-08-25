@@ -1,21 +1,31 @@
-import React from 'react';
-import {BsCheckAll, BsListUl} from "react-icons/bs";
+import React from "react";
+import { BsCheckAll, BsListUl } from "react-icons/bs";
 import "./Dashboard.css";
 
 const Dashboard = () => {
   return (
     <React.Fragment>
-      <div class="container dashboard">
-        <div className="dashboard-left">
-          <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt=""/>
-        </div>
-        <div className="dashboard-right">
-        <BsCheckAll/>
-        <BsListUl/>
+      <div className="container dashboard">
+        <div className="row">
+          <div className="dashboard-img col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img
+              src={process.env.PUBLIC_URL + "/images/dashboardPage.svg"}
+              alt=""
+            />
+            <br />
+          </div>
+          <div className="dashboard-icons col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div className="completed-icon">
+              <BsCheckAll size="55" />
+            </div>
+            <div className="todo-icon">
+              <BsListUl size="55" />
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;
