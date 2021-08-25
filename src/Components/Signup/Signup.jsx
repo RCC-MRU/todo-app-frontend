@@ -93,8 +93,10 @@ const Signup = () => {
               </a>
             </div>
             <div class="col-md-5">
-              <img className="signup-image"
-                src={process.env.PUBLIC_URL + "/images/signupImage.svg"}/>
+              <img
+                className="signup-image"
+                src={process.env.PUBLIC_URL + "/images/signupImage.svg"}
+              />
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@
   background-color: #90a9ff !important;
 }
 
-.navbar{
+.navbar {
   width: 100vw;
   position: sticky;
 }
@@ -33,7 +33,6 @@
 .nav-link {
   font-size: 20px;
 }
-
 
 .white-box {
   background-color: rgb(255, 255, 255);
@@ -77,10 +76,9 @@
 
 #exampleFormControlInput1 {
   width: 400px;
- 
+
   border: 3px solid #90a9ff;
 }
-
 
 .signup-image {
   height: 50vh;

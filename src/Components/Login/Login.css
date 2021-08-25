@@ -1,11 +1,10 @@
-
 /*  */
 
 .bg-nav {
   background-color: #90a9ff !important;
 }
 
-.navbar{
+.navbar {
   width: 100vw;
   position: sticky;
 }
@@ -37,11 +36,10 @@
 
 .white-box {
   background-color: rgb(255, 255, 255);
- height: 70vh;
+  height: 70vh;
   width: 70vw;
   display: grid;
   place-items: center;
-
 }
 /* .wrap {
   display: grid;
@@ -56,18 +54,17 @@
 }
 
 .login-button {
-  background-color: #90a9ff ;
-  border-radius: 60px ;
-  padding-top: 10px ;
-  padding-bottom: 10px ;
-  padding-right: 20px ;
-  padding-left: 20px ;
-  border: none ;
-  font-weight: 400px ;
-  font-size: 1.5rem ;
+  background-color: #90a9ff;
+  border-radius: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  font-weight: 400px;
+  font-size: 1.5rem;
   text-align: center;
   width: 50%;
-  
 }
 
 #forgot-password {
@@ -95,10 +92,8 @@
   margin: auto;
 }
 
-
-from{
+from {
   display: grid;
   place-items: center;
   margin-top: 250px;
 }
-
