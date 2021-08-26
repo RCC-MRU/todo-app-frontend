@@ -1,10 +1,13 @@
-
 /*  */
 
 .bg-nav {
   background-color: #90a9ff !important;
 }
 
+.navbar {
+  width: 100vw;
+  position: sticky;
+}
 .navbar-nav {
   width: 100%;
   display: flex;
@@ -33,11 +36,10 @@
 
 .white-box {
   background-color: rgb(255, 255, 255);
-  /* height: auto; */
-  width: 100%;
+  height: 70vh;
+  width: 70vw;
   display: grid;
   place-items: center;
-
 }
 /* .wrap {
   display: grid;
@@ -52,39 +54,46 @@
 }
 
 .login-button {
-  background-color: #90a9ff ;
-  border-radius: 60px ;
-  padding-top: 10px ;
-  padding-bottom: 10px ;
-  padding-right: 20px ;
-  padding-left: 20px ;
-  border: none ;
-  font-weight: 400px ;
-  font-size: 18px ;
+  background-color: #90a9ff;
+  border-radius: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  font-weight: 400px;
+  font-size: 1.5rem;
   text-align: center;
-  width: 100%;
-  
+  width: 50%;
 }
 
 #forgot-password {
   display: flex;
   justify-content: flex-end;
   color: rgb(85, 85, 255);
-  margin-right: 15px !important;
+  margin-right: 35px !important;
+  text-decoration: none;
 }
 
 #heading {
   margin: auto;
 }
 #exampleFormControlInput1 {
-  border: 3px solid #90a9ff;
+  border: 4px solid #90aaffb4;
+  margin: 8px;
+  padding: 20px;
+  width: 30vw;
 }
 
 .login-image {
-  height: 300px;
-  width: 300px;
+  height: 50vh;
+  width: 30vw;
   padding: 0;
-  margin: 0;
+  margin: auto;
 }
 
-
+from {
+  display: grid;
+  place-items: center;
+  margin-top: 250px;
+}

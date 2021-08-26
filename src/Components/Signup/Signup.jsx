@@ -1,9 +1,43 @@
 import React from "react";
 import "./Signup.css";
+import { FaUserCircle } from "react-icons/fa";
+import { MdExitToApp } from "react-icons/md";
 const Signup = () => {
   return (
     <div>
-      <div class="container wrap ">
+      <nav className="navbar navbar-expand-lg  bg-nav">
+        <a className="navbar-brand" href="#">
+          RCC TODO APP
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <div className="user-account">
+              <FaUserCircle size={35} />
+            </div>
+            <a className="nav-link text-white" id="" href="#">
+              Username
+            </a>
+            <div className="logout">
+              <MdExitToApp size={35} />
+            </div>
+            <a className="nav-link text-white" href="#">
+              Logout
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="container ">
         <div class=" white-box">
           <div class="row main-signup-row">
             <div class="col-md-7 ">
@@ -59,7 +93,10 @@ const Signup = () => {
               </a>
             </div>
             <div class="col-md-5">
-              <h1 id="heading">svg image</h1>
+              <img
+                className="signup-image"
+                src={process.env.PUBLIC_URL + "/images/signupImage.svg"}
+              />
             </div>
           </div>
         </div>

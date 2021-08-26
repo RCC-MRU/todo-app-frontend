@@ -1,10 +1,13 @@
-.container{
-    margin-top: 3rem;
+
+/* creating error !!! */
+
+/* .container{
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     padding:10rem ;
     background-color: white;
-}  
+}   */                                       
    
 .login-left{
     padding-right: 50px;
