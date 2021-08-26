@@ -14,11 +14,16 @@
     padding-left: 20px;
 }  
 
+.login-left button{
+    border-radius: 60px ;
+}
+
 .login-right{
     padding-right: 20px; 
 }  
   
 .login-right img{
-    height:350px;
-    width:400px; 
+    height:420px;
+    width:450px; 
+    padding-left: 60px;
 }

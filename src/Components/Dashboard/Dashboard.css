@@ -1,1 +1,28 @@
-/*  */
+.container{
+    margin-top:3rem;   
+    margin-bottom:3rem;
+}
+
+.dashboard{
+    display:flex;
+    flex-direction: column;
+}
+
+.dashboard-icons{
+    margin-top: 100px;
+    margin-left: 130vh;
+}
+
+.completed-icon{
+    padding-right: 50px;
+}
+
+.dashboard-icons{
+    display:flex;
+}
+
+.dashboard-img img{
+    height:550px;
+    width:750px;
+    padding-left: 100px;
+}
