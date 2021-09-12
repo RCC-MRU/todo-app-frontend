@@ -3,7 +3,7 @@
   "name": "Rcc Todo Application",
   "icons": [
     {
-      "src": "maskable_icon_x192.png",
+      "src": "/icons/maskable_icon_x192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
