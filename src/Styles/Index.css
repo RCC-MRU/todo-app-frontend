@@ -1,0 +1,73 @@
+/* ==================== Globals ==================== */
+
+/* ==================== root colors ==================== */
+:root {
+  --hue-color: 226;
+  --blue-color-light: hsl(var(--hue-color), 100%, 90%);
+  --blue-color-dark: hsl(var(--hue-color), 100%, 70%);
+  --white-color: hsl(var(--hue-color), 100%, 100%);
+}
+
+html,
+body {
+  background-color: var(--blue-color-light);
+}
+
+.white-box {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  height: 65vh;
+  margin: 4rem auto;
+  padding: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .white-box {
+    height: 100%;
+    padding: 1rem;
+  }
+}
+
+/* ==================== Buttons ==================== */
+.btn-blue-dark {
+  background-color: var(--blue-color-dark);
+  color: var(--white-color);
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px 8px;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.btn-blue-dark:hover {
+  background-color: var(--blue-color-dark);
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+
+/* ==================== Header ==================== */
+
+/* ==================== Navigation ==================== */
+.bg-nav {
+  background-color: var(--blue-color-dark) !important;
+}
+
+/* ==================== Footer ==================== */
+#copyright {
+  position: relative;
+  text-align: center;
+  background-color: var(--blue-color-dark);
+  color: #ffffff;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  #copyright {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
