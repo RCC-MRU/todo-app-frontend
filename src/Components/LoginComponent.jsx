@@ -31,7 +31,7 @@ const LoginComponent = () => {
               </a>
 
               <div className="form-group">
-                <button type="submit" class="btn btn-blue-dark">
+                <button type="submit" className="btn btn-blue-dark">
                   Login
                 </button>
               </div>
