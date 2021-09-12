@@ -23,6 +23,7 @@ const LoginComponent = () => {
                   className="form-control"
                   id="password"
                   placeholder="Password"
+                  autoComplete="true"
                 ></input>
               </div>
 
@@ -44,6 +45,7 @@ const LoginComponent = () => {
               alt="Login"
               className="img-fluid float-right"
               width="75%"
+              height="100%"
             />
           </div>
         </div>

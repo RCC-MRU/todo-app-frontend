@@ -54,6 +54,7 @@ const SignupComponent = () => {
               alt="signup"
               className="img-fluid float-right"
               width="75%"
+              height="100%"
             />
           </div>
         </div>

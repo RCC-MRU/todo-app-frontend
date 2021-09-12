@@ -32,6 +32,7 @@ const HomeComponent = () => {
               alt="Homepage"
               className="img-fluid float-right"
               width="75%"
+              height="100%"
             />
           </div>
         </div>
