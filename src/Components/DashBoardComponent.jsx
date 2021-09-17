@@ -1,5 +1,7 @@
 import React from 'react'
-
+import { BsPlusCircle} from "react-icons/bs";
+import { MdDoneAll } from "react-icons/md";
+import { FaList} from "react-icons/fa";
 const DashBoardComponent = () => {
   return (
     <React.Fragment>
@@ -15,9 +17,9 @@ const DashBoardComponent = () => {
             />
           </div>
           <div className="col-md-4">
-            <button type="button" class="btn btn-primary">ADD</button>
-            <button type="button" class="btn btn-primary">Tick</button>
-            <button type="button" class="btn btn-primary ">LIST</button>
+            <button type="button" class="btn btn-primary DashboardButton"><BsPlusCircle size={30} /></button>
+            <button type="button" class="btn btn-primary DashboardButton"><MdDoneAll size={30} /></button>
+            <button type="button" class="btn btn-primary DashboardButton"><FaList size={30} /></button>
         </div>
       </div>
       </div>
