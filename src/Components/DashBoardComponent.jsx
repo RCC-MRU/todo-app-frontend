@@ -7,16 +7,16 @@ const DashBoardComponent = () => {
     <React.Fragment>
       <div className="container white-box">
         <div className="row">
-          <div className="col-md-8 m-0">
+          <div className="col-md-9 m-0">
             <img
               src={process.env.PUBLIC_URL + "/images/dashBoard.svg"}
               alt="Homepage"
-              className="img-fluid "
+              className="img-fluid m-0"
               width="70%"
               height= "70%"
             />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-3">
             <button type="button" class="btn btn-primary DashboardButton"><BsPlusCircle size={30} /></button>
             <button type="button" class="btn btn-primary DashboardButton"><MdDoneAll size={30} /></button>
             <button type="button" class="btn btn-primary DashboardButton"><FaList size={30} /></button>
