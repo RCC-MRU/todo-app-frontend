@@ -38,6 +38,17 @@ body {
   font-weight: 600;
 }
 
+.DashboardButton {
+  border-radius: 150px;
+  color: white;
+  background-color: var(--blue-color-dark);
+  border: none;
+  padding: 15px;
+  margin: 9px;
+
+
+}
+
 /* ==================== Header ==================== */
 
 /* ==================== Navigation ==================== */
