@@ -1,7 +1,6 @@
 import React from 'react';
-import '../Styles/ShowTasksComponent.css';
 
-const ShowTasksComponent = () => {
+const ShowTasksComponent = (props) => {
   return (
     <React.Fragment>
     <div className="container white-box">
@@ -13,6 +12,7 @@ const ShowTasksComponent = () => {
           <p>TASK-1</p>
           <p>TASK-2</p>
           <p>TASK-3</p>
+          <p>{props.match.params.id}</p>
         </div>
       </div>
     </div>
