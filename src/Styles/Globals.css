@@ -1,0 +1,9 @@
+/* ==================== Globals ==================== */
+
+/* ==================== root colors ==================== */
+:root {
+  --hue-color: 226;
+  --blue-color-light: hsl(var(--hue-color), 100%, 90%);
+  --blue-color-dark: hsl(var(--hue-color), 100%, 70%);
+  --white-color: hsl(var(--hue-color), 100%, 100%);
+}

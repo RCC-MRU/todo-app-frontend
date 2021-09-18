@@ -26,8 +26,8 @@ const App = () => {
         <Route exact path="/dashboard">
           <Dashboard />
         </Route>
-        <Route exact path="/showTask">
-          <ShowTasksComponent/>
+        <Route exact path="/todos/u/:id" component={ShowTasksComponent}>
+          {/* <ShowTasksComponent/> */}
         </Route>
         <Route path="*">
           <Redirect to="/" />
