@@ -7,6 +7,7 @@ import Login from "./Components/LoginComponent";
 import Dashboard from "./Components/DashBoardComponent";
 import Header from "./Components/HeaderComponent";
 import Footer from "./Components/FooterComponent";
+import ShowTasksComponent from "./Components/ShowTasksComponent";
 
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
         </Route>
         <Route exact path="/dashboard">
           <Dashboard />
+        </Route>
+        <Route exact path="/todos/u/:id" component={ShowTasksComponent}>
+          {/* <ShowTasksComponent/> */}
         </Route>
         <Route path="*">
           <Redirect to="/" />

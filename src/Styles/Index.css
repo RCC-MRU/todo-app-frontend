@@ -1,12 +1,4 @@
-/* ==================== Globals ==================== */
-
-/* ==================== root colors ==================== */
-:root {
-  --hue-color: 226;
-  --blue-color-light: hsl(var(--hue-color), 100%, 90%);
-  --blue-color-dark: hsl(var(--hue-color), 100%, 70%);
-  --white-color: hsl(var(--hue-color), 100%, 100%);
-}
+@import url(./Globals.css);
 
 html,
 body {
@@ -53,11 +45,11 @@ body {
   border: none;
   padding: 15px;
   margin: 9px;
-display: initial;
-  align-self: flex-end;
   flex-direction: row;
   
 }
+
+
 
 /* ==================== Header ==================== */
 

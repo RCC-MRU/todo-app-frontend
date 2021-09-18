@@ -12,6 +12,7 @@ import reportWebVitals from "./PWA/reportWebVitals";
 import App from "./App";
 import "./Styles/Index.css";
 import "./Styles/Login_Signup.css";
+import "./Styles/Todos.css";
 
 ReactDOM.render(
   <BrowserRouter>
