@@ -8,7 +8,7 @@ import Dashboard from "./Components/DashBoardComponent";
 import Header from "./Components/HeaderComponent";
 import Footer from "./Components/FooterComponent";
 import ShowTasksComponent from "./Components/ShowTasksComponent";
-import DescriptionPage from "./Components/DescriptionPage.jsx"
+import DescriptionPage from "./Components/DescriptionPage.jsx";
 
 const App = () => {
   return (
@@ -27,8 +27,8 @@ const App = () => {
         <Route exact path="/dashboard">
           <Dashboard />
         </Route>
-        <Route exact path="/DescriptionPage">
-          <DescriptionPage/>
+        <Route exact path="/description-page">
+          <DescriptionPage />
         </Route>
         <Route exact path="/todos/u/:id" component={ShowTasksComponent}>
           {/* <ShowTasksComponent/> */}
