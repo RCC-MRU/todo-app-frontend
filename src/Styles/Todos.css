@@ -18,9 +18,9 @@
 }
 
 .title{
-  padding-left: 45%; 
-  padding-top:20px;  
-  padding-bottom:20px; 
+  padding-left: 35%; 
+  padding-top:2vh;  
+  padding-bottom:10px; 
   margin-bottom: 20px;
   background-color: #4A7DFF;
   border-radius: 15px;
@@ -36,7 +36,7 @@
 
 .completed{
   display:flex;
-  margin-left: 150px;
+  margin-left: 22vh;
   background-color: #99C2FF;
   border-radius: 5px;
   color: white;
@@ -44,7 +44,7 @@
 
 .delete{
   display:flex;
-  margin-left: 150px;
+  margin-left: 22vh;
   background-color: #99C2FF;
   border-radius: 5px;
   color: white;
@@ -58,44 +58,55 @@
   display:flex;
 }
 
-.description-of-task{
-  margin-top: 20px;
+/* .description-of-task{
+  margin-top: 2vh;
   padding-bottom: 130px;
   background-color: #99C2FF;
   border-radius: 10px;
   color: white;
+} */
+
+.description-of-task textarea{
+  margin-top: 2vh;
+  padding-bottom: 3vh;
+  background-color: #99C2FF;
+  border-radius: 10px;
 }
 
-.addTodo{
-  margin-left: 40%;
-  margin-right: 40%; 
-  margin-top:20px; 
+.add-todo{
+  /* padding-left: 5px; */
+  margin-top:2vh; 
   background-color: #4A7DFF;
   border-radius: 10px;
   color: white;
-
+  display:flex;
+  justify-content: center;
 }
 
-.detailed-Todo{
+/* .detailed-todo{
   display: flex;
-}
+} */
 
 .description{
   padding-left: 50px;
 }
 
-.timeAndDate{
-  margin-left: 120px;
-  margin-top: 30px;
-  background-color: #99C2FF;
+.time-and-date{
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
-.startTime h5{ 
+.date{
   margin-top: 50px;
   background-color: #99C2FF;
 }
 
-.endTime h5{
+.start-time{ 
+  margin-top: 50px;
+  background-color: #99C2FF;
+}
+
+.end-time{
   margin-top: 50px;
   background-color: #99C2FF;
 }

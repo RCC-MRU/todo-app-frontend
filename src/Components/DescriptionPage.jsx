@@ -9,50 +9,50 @@ const DescriptionPage = () => {
     <React.Fragment>
       <div className="container">
         <div className="white-box">
-          <div className="detailed-Todo">
-            <div className="description">
+          <div className="row">
+            <div className="description col-md-10">
               <div className="row">
-                <div className="title col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-                  <h3>Title</h3>
+                <div className="title col-md-10 ">
+                  <input type="text" id="title" name="title"/>
                 </div>
               </div>
               <div className="row">
-                <div className="tags col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-                  <div className="important">
-                    <AiFillStar size="30" />
-                    <h5>Important</h5>
+                <div className="tags col-md-10 ">
+                  <div className="important ">
+                    <AiFillStar size="30"/>
+                    <input type="button" value="Important" id=""/>
                   </div>
-                  <div className="completed">
+                  <div className="completed ">
                     <TiTickOutline size="30" />
-                    <h5>Completed</h5>
+                    <input type="button" value="Completed" id=""/>
                   </div>
-                  <div className="delete">
+                  <div className="delete ">
                     <MdDelete size="30" />
-                    <h5>Delete</h5>
+                    <input type="button" value="Delete" id=""/>
                   </div>
                 </div>
               </div>
               <div className="row">
-                <div className="description-of-task col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-                  <h5>Description</h5>
+                <div className="description-of-task col-md-10">
+                  <textarea name="description" id="description" cols="90" rows="6" placeholder="Description"></textarea>
                 </div>
               </div>
               <div className="row">
-                <div className="addTodo col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <div className="add-todo col-md-10">
                   <GoPlus size="30" />
-                  <h5>Add ToDo</h5>
+                  <input type="button" value="Add ToDo" id=""/>
                 </div>
               </div>
             </div>
             <div className="row">
-              <div className="timeAndDate col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+              <div className="time-and-date col-md-8">
                 <div className="date">
                   <h5>20 Sept</h5>
                 </div>
-                <div className="startTime">
+                <div className="start-time">
                   <h5>9:00 AM</h5>
                 </div>
-                <div className="endTime">
+                <div className="end-time">
                   <h5>11:00AM</h5>
                 </div>
               </div>
