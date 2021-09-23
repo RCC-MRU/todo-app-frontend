@@ -18,24 +18,36 @@
 }
 
 .title{
-  padding-left: 40%; 
-  padding-top:20px; 
+  padding-left: 45%; 
+  padding-top:20px;  
   padding-bottom:20px; 
+  margin-bottom: 20px;
+  background-color: #4A7DFF;
+  border-radius: 15px;
+  color: white;
 }
 
 .important{
   display:flex;
-  padding-left: 180px;
+  background-color: #99C2FF;
+  border-radius: 5px;
+  color: white;
 }
 
 .completed{
   display:flex;
-  padding-left: 180px;
+  margin-left: 150px;
+  background-color: #99C2FF;
+  border-radius: 5px;
+  color: white;
 }
 
 .delete{
   display:flex;
-  padding-left: 180px;
+  margin-left: 150px;
+  background-color: #99C2FF;
+  border-radius: 5px;
+  color: white;
 }
 
 .addTodo{
@@ -47,13 +59,21 @@
 }
 
 .description-of-task{
-  padding-top: 20px;
-  padding-bottom: 190px;
+  margin-top: 20px;
+  padding-bottom: 130px;
+  background-color: #99C2FF;
+  border-radius: 10px;
+  color: white;
 }
 
 .addTodo{
-  padding-left: 40%; 
-  padding-top:20px; 
+  margin-left: 40%;
+  margin-right: 40%; 
+  margin-top:20px; 
+  background-color: #4A7DFF;
+  border-radius: 10px;
+  color: white;
+
 }
 
 .detailed-Todo{
@@ -61,18 +81,21 @@
 }
 
 .description{
-  padding-left: 80px;
+  padding-left: 50px;
 }
 
 .timeAndDate{
-  padding-left: 100px;
-  padding-top: 50px;
+  margin-left: 120px;
+  margin-top: 30px;
+  background-color: #99C2FF;
 }
 
-.startTime{
-  padding-top: 50px;
+.startTime h5{ 
+  margin-top: 50px;
+  background-color: #99C2FF;
 }
 
-.endTime{
-  padding-top: 50px;
+.endTime h5{
+  margin-top: 50px;
+  background-color: #99C2FF;
 }

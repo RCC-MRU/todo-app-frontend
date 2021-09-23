@@ -11,33 +11,41 @@ const DescriptionPage = () => {
         <div className="white-box">
           <div className="detailed-Todo">
             <div className="description">
-              <div className="title">
-                <h3>Title</h3>
-              </div>
-              <div class="tags">
-                <div className="important">
-                  <AiFillStar size="30" />
-                  <h5>Important</h5>
-                </div>
-                <div className="completed">
-                  <TiTickOutline size="30" />
-                  <h5>Completed</h5>
-                </div>
-                <div className="delete">
-                  <MdDelete size="30" />
-                  <h5>Delete</h5>
+              <div className="row">
+                <div className="title col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                  <h3>Title</h3>
                 </div>
               </div>
-              <div className="description-of-task">
-                <h6>Description</h6>
+              <div className="row">
+                <div className="tags col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                  <div className="important">
+                    <AiFillStar size="30" />
+                    <h5>Important</h5>
+                  </div>
+                  <div className="completed">
+                    <TiTickOutline size="30" />
+                    <h5>Completed</h5>
+                  </div>
+                  <div className="delete">
+                    <MdDelete size="30" />
+                    <h5>Delete</h5>
+                  </div>
+                </div>
               </div>
-              <div className="addTodo">
-                <GoPlus size="30" />
-                <h5>Add ToDo</h5>
+              <div className="row">
+                <div className="description-of-task col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                  <h5>Description</h5>
+                </div>
+              </div>
+              <div className="row">
+                <div className="addTodo col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                  <GoPlus size="30" />
+                  <h5>Add ToDo</h5>
+                </div>
               </div>
             </div>
-            <div>
-              <div className="timeAndDate">
+            <div className="row">
+              <div className="timeAndDate col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                 <div className="date">
                   <h5>20 Sept</h5>
                 </div>
