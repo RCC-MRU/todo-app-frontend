@@ -17,13 +17,13 @@ const DashBoardComponent = () => {
             />
           </div>
           <div className="col-md-4  d-flex " style={{alignItems:"flex-end"}}>
-            <button type="button" class="btn btn-primary DashboardButton">
+            <button type="button" className="btn DashboardButton">
               <BsPlusCircle size={30} />
             </button>
-            <button type="button" class="btn btn-primary DashboardButton">
+            <button type="button" className="btn DashboardButton">
               <MdDoneAll size={30} />
             </button>
-            <button type="button" class="btn btn-primary DashboardButton">
+            <button type="button" className="btn DashboardButton">
               <FaList size={30} />
             </button>
           </div>
