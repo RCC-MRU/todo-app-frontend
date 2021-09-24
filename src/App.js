@@ -27,7 +27,7 @@ const App = () => {
         <Route exact path="/dashboard">
           <Dashboard />
         </Route>
-        <Route exact path="/description-page">
+        <Route exact path="/descriptionPage">
           <DescriptionPage />
         </Route>
         <Route exact path="/todos/u/:id" component={ShowTasksComponent}>
