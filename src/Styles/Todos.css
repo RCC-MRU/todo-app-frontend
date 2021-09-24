@@ -5,7 +5,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   height: 50px;
-  font-size: 20px;
+    font-size: 20px;
   padding-left: 20px;
 }
 
@@ -18,37 +18,72 @@
 }
 
 .title{
-  padding-left: 35%; 
+  text-align: center;
   padding-top:2vh;  
-  padding-bottom:10px; 
-  margin-bottom: 20px;
+  padding-bottom:2vh; 
+  margin-bottom: 10px;
   background-color: #4A7DFF;
   border-radius: 15px;
   color: white;
 }
 
+.title input{
+  background-color: #4A7DFF;
+}
+
 .important{
   display:flex;
-  background-color: #99C2FF;
+  margin-top:2vh;
+  margin-left:5vh;
+  /* background-color: #99C2FF; */
   border-radius: 5px;
   color: white;
+}
+
+.important input{
+  background-color: #99C2FF;
+  padding-left: 31px;
+  padding-right: 31px;
+  border-radius: 5px;
 }
 
 .completed{
   display:flex;
-  margin-left: 22vh;
-  background-color: #99C2FF;
+  margin-top:2vh;
+  margin-left: 5vh;
+  /* background-color: #99C2FF; */
   border-radius: 5px;
   color: white;
 }
 
+.completed input{
+  background-color: #99C2FF;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 5px;
+}
+
 .delete{
   display:flex;
-  margin-left: 22vh;
-  background-color: #99C2FF;
+  margin-top:2vh; 
+  margin-left: 5vh;
+  /* background-color: #99C2FF; */
   border-radius: 5px;
   color: white;
 }
+
+.delete input{
+  background-color: #99C2FF;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 5px;
+}
+
+.tags-alignment{
+  /* display:flex; */
+  margin-left: 20vh;
+}
+
 
 .addTodo{
   display: flex;
@@ -76,11 +111,18 @@
 .add-todo{
   /* padding-left: 5px; */
   margin-top:2vh; 
-  background-color: #4A7DFF;
-  border-radius: 10px;
+  /* background-color: #4A7DFF; */
+  /* border-radius: 10px; */
   color: white;
   display:flex;
   justify-content: center;
+}
+
+.add-todo input{
+  background-color: #4A7DFF;
+  border-radius: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 /* .detailed-todo{
@@ -91,22 +133,63 @@
   padding-left: 50px;
 }
 
+.date-time-and-tags{
+  display:flex;
+}
+
 .time-and-date{
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-left: 9vh;
 }
 
 .date{
-  margin-top: 50px;
+  margin-top:3vh;
+  padding-left: 10px;
+  /* background-color: #99C2FF; */
+}
+
+.date label{
   background-color: #99C2FF;
+  border-radius: 3px;
+}
+
+.date input{
+  margin-left:10px;
+  border-radius: 10px;
+}
+
+.time{
+  margin-top: 2vh;
+  display: flex;
 }
 
 .start-time{ 
-  margin-top: 50px;
+  margin-top: 1vh;
+  padding-left: 10px;
+  /* background-color: #99C2FF; */
+}
+
+.start-time label{
   background-color: #99C2FF;
+  border-radius: 3px;
+}
+
+.start-time input{
+  margin-left:10px;
+  border-radius: 10px;
 }
 
 .end-time{
-  margin-top: 50px;
+  margin-top: 1vh;
+  margin-left: 50px;
+  /* background-color: #99C2FF; */
+}
+
+.end-time label{
   background-color: #99C2FF;
+  border-radius: 3px;
+}
+
+.end-time input{
+  margin-left:10px;
+  border-radius: 10px;
 }
