@@ -18,7 +18,7 @@ const HomeComponent = () => {
             </p>
 
             <Link to="/register" type="button" className="btn btn-blue-dark">
-              Register
+              Signup
             </Link>
 
             <Link to="/login" type="button" className="btn btn-blue-dark">
