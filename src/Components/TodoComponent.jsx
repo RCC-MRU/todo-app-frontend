@@ -23,28 +23,14 @@ const TodoComponent = () => {
                 </section>
 
                 <section className="row pb-2">
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <label htmlFor="starting-time">Starting Time</label>
-                      <input
-                        type="datetime-local"
-                        id="starting-time"
-                        name="starting-time"
-                        className="form-control text-field"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <label htmlFor="ending-time">Ending Time</label>
-                      <input
-                        type="datetime-local"
-                        id="ending-time"
-                        name="ending-time"
-                        className="form-control text-field"
-                      />
-                    </div>
+                  <div className="form-group">
+                    <label htmlFor="ending-time">Ending Time</label>
+                    <input
+                      type="datetime-local"
+                      id="ending-time"
+                      name="ending-time"
+                      className="form-control text-field"
+                    />
                   </div>
                 </section>
 
@@ -98,4 +84,9 @@ export default TodoComponent;
 &nbsp; = 1space
 &ensp; = 2space
 &emsp; = 4space
+*/
+
+
+/* 
+remove completed and delete in add todo action
 */
