@@ -12,7 +12,9 @@ const TodoComponent = () => {
           <form action="/">
             <div className="row">
               <div className="col-md-9">
-                <section className="form-group pb-2">
+                <section className="form-group">
+                  {/* <label htmlFor="title">Title</label> */}
+
                   <input
                     type="text"
                     name="title"
@@ -22,19 +24,19 @@ const TodoComponent = () => {
                   />
                 </section>
 
-                <section className="row pb-2">
-                  <div className="form-group">
-                    <label htmlFor="ending-time">Ending Time</label>
-                    <input
-                      type="datetime-local"
-                      id="ending-time"
-                      name="ending-time"
-                      className="form-control text-field"
-                    />
-                  </div>
+                <section className="form-group">
+                  {/* <label htmlFor="ending-time">Ending Time</label> */}
+                  <input
+                    type="datetime-local"
+                    id="ending-time"
+                    name="ending-time"
+                    className="form-control text-field"
+                  />
                 </section>
 
-                <section className="form-group pb-2">
+                <section className="form-group">
+                  {/* <label htmlFor="description">Description</label> */}
+
                   <textarea
                     name="description"
                     id="description"
@@ -48,7 +50,7 @@ const TodoComponent = () => {
 
                 <div className="form-group">
                   <button className="btn btn-blue-dark" type="submit">
-                    <GoPlus size={22} /> &nbsp; Add Todo
+                    <GoPlus size={20} /> &nbsp; Add Todo
                   </button>
                 </div>
               </div>
@@ -85,7 +87,6 @@ export default TodoComponent;
 &ensp; = 2space
 &emsp; = 4space
 */
-
 
 /* 
 remove completed and delete in add todo action

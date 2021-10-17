@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { MdExitToApp } from "react-icons/md";
 
+import { TodoContext } from "../../Utils/Context";
+
 const HeaderComponent = () => {
+  const context = useContext(TodoContext);
+
+  const logout = () => {
+    sessionStorage.clear();
+    context.setCredentials(null);
+  };
+
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-lg navbar-dark bg-nav">
@@ -30,8 +39,8 @@ const HeaderComponent = () => {
                   <FaUserCircle size={24} /> Username
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
+              <li className="nav-item active">
+                <a className="nav-link" href="/" onClick={logout}>
                   <MdExitToApp size={24} /> Logout
                 </a>
               </li>
