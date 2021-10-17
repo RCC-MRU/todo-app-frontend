@@ -38,6 +38,22 @@ body {
   font-weight: 600;
 }
 
+/* header button is used once as a login button in header */
+.btn-header {
+  background-color: var(--white-color);
+  color: var(--blue-color-dark);
+  width: 100%;
+  /* margin: 10px 0; */
+  padding: 0.5rem 1rem;
+  /* border-radius: 50px; */
+  /* font-size: 18px; */
+}
+
+.btn-header:hover {
+  background-color: var(--white-color);
+  color: var(--blue-color-dark);
+}
+
 .DashboardButton {
   border-radius: 150px;
   color: white;

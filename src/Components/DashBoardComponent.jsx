@@ -2,12 +2,18 @@ import React from "react";
 import { BsPlusCircle } from "react-icons/bs";
 import { MdDoneAll } from "react-icons/md";
 import { FaList } from "react-icons/fa";
+
+import { Link } from "react-router-dom";
+
 const DashBoardComponent = () => {
   return (
     <React.Fragment>
       <div className="container white-box">
         <div className="row">
-          <div className="col-md-8 " style={{display:"grid",placeItems:"center"}}>
+          <div
+            className="col-md-8 "
+            style={{ display: "grid", placeItems: "center" }}
+          >
             <img
               src={process.env.PUBLIC_URL + "/images/dashBoard.svg"}
               alt="Homepage"
@@ -16,16 +22,21 @@ const DashBoardComponent = () => {
               height="100%"
             />
           </div>
-          <div className="col-md-4  d-flex " style={{alignItems:"flex-end"}}>
-            <button type="button" className="btn DashboardButton">
+          <div className="col-md-4  d-flex " style={{ alignItems: "flex-end" }}>
+            <Link
+              to="/description-page"
+              type="button"
+              className="btn DashboardButton"
+              tooltip="Add Todo"
+            >
               <BsPlusCircle size={30} />
-            </button>
-            <button type="button" className="btn DashboardButton">
+            </Link>
+            <Link type="button" className="btn DashboardButton" to="/">
               <MdDoneAll size={30} />
-            </button>
-            <button type="button" className="btn DashboardButton">
+            </Link>
+            <Link type="button" className="btn DashboardButton" to="/">
               <FaList size={30} />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

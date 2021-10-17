@@ -1,27 +1,45 @@
-import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Switch, Route, Redirect, useHistory } from "react-router-dom";
 
 import Home from "./Components/HomeComponent";
 import Signup from "./Components/SignupComponent";
 import Login from "./Components/LoginComponent";
 import Dashboard from "./Components/DashBoardComponent";
-import Header from "./Components/HeaderComponent";
+import Header from "./Components/Header/HeaderComponent";
 import Footer from "./Components/FooterComponent";
 import ShowTasksComponent from "./Components/ShowTasksComponent";
 import TodoComponent from "./Components/TodoComponent";
 
 import { TodoContext } from "./Utils/Context";
+import { ToastContainer } from "react-toastify";
 
 //local storage items
-const emailLocal = sessionStorage.getItem("email");
 const tokenLocal = sessionStorage.getItem("token");
-const nameLocal = sessionStorage.getItem("name");
+const usernameLocal = sessionStorage.getItem("username");
 
 const App = () => {
+  const [credentials, setCredentials] = useState({
+    token: tokenLocal,
+    name: usernameLocal,
+  });
+
+  const history = useHistory();
+  useEffect(() => {
+    if (!credentials?.token) {
+      history.push("/");
+    }
+  }, [credentials?.token, history]);
+
   return (
     <React.Fragment>
-      <Header />
-      <TodoContext.Provider value={{ emailLocal, tokenLocal, nameLocal }}>
+      <TodoContext.Provider value={{ credentials, setCredentials }}>
+        <ToastContainer
+          position="bottom-left"
+          autoClose={5000}
+          draggable={true}
+          theme="colored"
+        />
+        <Header />
         <Switch>
           <Route exact path="/">
             <Home />

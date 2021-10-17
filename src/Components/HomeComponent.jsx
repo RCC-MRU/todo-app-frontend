@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { TodoContext } from "../Utils/Context";
 
 const HomeComponent = () => {
+  const context = useContext(TodoContext);
   return (
     <React.Fragment>
       <div className="container white-box">
@@ -17,13 +19,31 @@ const HomeComponent = () => {
               blanditiis quasi consequatur, laudantium off
             </p>
 
-            <Link to="/register" type="button" className="btn btn-blue-dark">
-              Signup
-            </Link>
+            {context.credentials?.token ? (
+              <React.Fragment>
+                <Link
+                  to="/dashboard"
+                  type="button"
+                  className="btn btn-blue-dark"
+                >
+                  Dashboard
+                </Link>
+              </React.Fragment>
+            ) : (
+              <React.Fragment>
+                <Link
+                  to="/register"
+                  type="button"
+                  className="btn btn-blue-dark"
+                >
+                  Signup
+                </Link>
 
-            <Link to="/login" type="button" className="btn btn-blue-dark">
-              Login
-            </Link>
+                <Link to="/login" type="button" className="btn btn-blue-dark">
+                  Login
+                </Link>
+              </React.Fragment>
+            )}
           </div>
 
           <div className="col-md-6 my-2">
