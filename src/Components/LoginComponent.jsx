@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { userLogin } from "../Utils/axios";
-
+import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -11,6 +11,7 @@ const LoginComponent = () => {
     username: "",
     password: "",
   });
+  const history = useHistory();
   const context = useContext(TodoContext);
 
   const handleChange = (event) => {
@@ -29,17 +30,19 @@ const LoginComponent = () => {
     userLogin(login)
       .then((res) => {
         let resp = res.data;
-        console.log(resp);
+        console.log(resp, resp.token, resp.username);
         toast.success(resp.message);
 
         context.setCredentials({
-          token: resp.token,
-          name: resp.username,
+          token: resp.token || "token",
+          name: resp.username || "username",
         });
 
         // setting the token in session storage
         sessionStorage.setItem("username", resp.username);
         sessionStorage.setItem("token", resp.token);
+
+        history.push("/dashboard");
       })
       .catch((err) => {
         console.log(err);
