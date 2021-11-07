@@ -26,7 +26,7 @@ const SignupComponent = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(event.target);
+    // console.log(event.target);
 
     userSignup(signup)
       .then((res) => {
@@ -47,7 +47,7 @@ const SignupComponent = () => {
       })
       .catch((err) => {
         console.log(err);
-        toast.error(err.response.data.message);
+        // toast.error(err.response.data.message);
       });
   };
 
