@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ShowTasksComponent = (props) => {
+const ShowTasksComponent = () => {
   return (
     <React.Fragment>
     <div className="container white-box">
@@ -12,7 +12,7 @@ const ShowTasksComponent = (props) => {
           <p>TASK-1</p>
           <p>TASK-2</p>
           <p>TASK-3</p>
-          <p>{props.match.params.id}</p>
+          <p></p>
         </div>
       </div>
     </div>
