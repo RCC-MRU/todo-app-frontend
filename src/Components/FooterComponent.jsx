@@ -3,7 +3,7 @@ import React from "react";
 const FooterComponent = () => {
   return (
     <React.Fragment>
-      <div id="copyright">RCC TODO App @2021 - All Rights Reserved.</div>
+      <div id="copyright">Time Management TODO @2021 - All Rights Reserved.</div>
     </React.Fragment>
   );
 };
