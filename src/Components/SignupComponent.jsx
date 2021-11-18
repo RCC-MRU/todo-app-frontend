@@ -46,8 +46,8 @@ const SignupComponent = () => {
         history.push("/login");
       })
       .catch((err) => {
-        console.log(err);
-        // toast.error(err.response.data.message);
+        console.log(err.message);
+        toast.error(err.response.data.message);
       });
   };
 

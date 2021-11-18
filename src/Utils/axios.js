@@ -1,7 +1,5 @@
 import axios from "axios";
-import {
-  BaseUrl
-} from "./BaseURL";
+import { BaseUrl } from "./BaseURL";
 let ultimateToken;
 
 const userSignup = async (signupDetails) => {
@@ -26,21 +24,5 @@ const userLogin = async (loginDetails) => {
 
   return response;
 };
-const getTaskList = async () => {
-  let response = await axios({
-    method: "GET",
-    url: `${BaseUrl}/todos/display`,
-    headers:{
-      authorization: `Bearer ${ultimateToken}`
-    }
 
-  })
-  console.log(response);
-  return response;
-
-}
-export {
-  userSignup,
-  userLogin,
-  getTaskList
-};
+export { userSignup, userLogin };

@@ -25,12 +25,12 @@ const LoginComponent = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(event.target);
+    // console.log(event.target);
 
     userLogin(login)
       .then((res) => {
         let resp = res.data;
-        console.log(resp, resp.token, resp.username);
+        // console.log(resp, resp.token, resp.username);
         toast.success(resp.message);
 
         context.setCredentials({
@@ -64,8 +64,7 @@ const LoginComponent = () => {
                   id="username"
                   name="username"
                   placeholder="Username"
-                  onChange={handleChange}
-                ></input>
+                  onChange={handleChange}></input>
               </div>
 
               <div className="form-group">
@@ -76,8 +75,7 @@ const LoginComponent = () => {
                   name="password"
                   placeholder="Password"
                   autoComplete="true"
-                  onChange={handleChange}
-                ></input>
+                  onChange={handleChange}></input>
               </div>
 
               <a id="forgot-password" href="/">
