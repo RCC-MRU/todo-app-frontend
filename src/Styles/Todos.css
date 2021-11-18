@@ -1,208 +1,43 @@
 @import url(./Globals.css);
 
+/* ================= Add Task =================== */
 .text-field {
   background-color: var(--blue-color-light);
   padding: 22px 12px;
   border-radius: 8px;
 }
 
-::placeholder {
-  color: black !important;
-}
-
 .text-field:focus {
   background-color: var(--blue-color-light);
 }
 
-.important-tasks p {
-  background-color: var(--blue-color-dark);
-  margin-top: 30px;
-  margin-bottom: 30px;
-  height: 50px;
-  font-size: 20px;
-  padding-left: 20px;
+::placeholder {
+  color: black !important;
 }
 
-.tasks p {
-  background-color: var(--blue-color-light);
-  margin-bottom: 30px;
-  height: 50px;
-  font-size: 20px;
-  padding-left: 20px;
-}
-
-.title {
-  text-align: center;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  margin-bottom: 10px;
-  background-color: #4a7dff;
-  border-radius: 15px;
-  color: white;
-}
-
-.title input {
-  background-color: #4a7dff;
-}
-
-.important {
-  display: flex;
-  margin-top: 2vh;
-  margin-left: 5vh;
-  /* background-color: #99C2FF; */
+/* ================= Show Task =================== */
+.task-list-item {
+  background: linear-gradient(
+    to right,
+    var(--blue-color-dark),
+    var(--blue-color-light)
+  );
+  padding: 15px 20px;
   border-radius: 5px;
-  color: white;
+  margin-bottom: 1.5rem;
 }
 
-.important input {
-  background-color: #99c2ff;
-  padding-left: 31px;
-  padding-right: 31px;
-  border-radius: 5px;
+.task-list-item h5 {
+  color: var(--white-color);
+  text-transform: capitalize;
+  margin: 0;
 }
 
-.completed {
-  display: flex;
-  margin-top: 2vh;
-  margin-left: 5vh;
-  /* background-color: #99C2FF; */
-  border-radius: 5px;
-  color: white;
-}
-
-.completed input {
-  background-color: #99c2ff;
-  padding-left: 28px;
-  padding-right: 28px;
-  border-radius: 5px;
-}
-
-.delete {
-  display: flex;
-  margin-top: 2vh;
-  margin-left: 5vh;
-  /* background-color: #99C2FF; */
-  border-radius: 5px;
-  color: white;
-}
-
-.delete input {
-  background-color: #99c2ff;
-  padding-left: 45px;
-  padding-right: 45px;
-  border-radius: 5px;
-}
-
-.tags-alignment {
-  /* display:flex; */
-  margin-left: 20vh;
-}
-
-.addTodo {
-  display: flex;
-}
-
-.tags {
-  display: flex;
-}
-
-/* .description-of-task{
-  margin-top: 2vh;
-  padding-bottom: 130px;
-  background-color: #99C2FF;
-  border-radius: 10px;
-  color: white;
-} */
-
-.description-of-task textarea {
-  margin-top: 2vh;
-  padding-bottom: 3vh;
-  background-color: #99c2ff;
-  border-radius: 10px;
-}
-
-.add-todo {
-  /* padding-left: 5px; */
-  margin-top: 2vh;
-  /* background-color: #4A7DFF; */
-  /* border-radius: 10px; */
-  color: white;
-  display: flex;
-  justify-content: center;
-}
-
-.add-todo input {
-  background-color: #4a7dff;
-  border-radius: 10px;
-  padding-left: 45px;
-  padding-right: 45px;
-}
-
-/* .detailed-todo{
-  display: flex;
-} */
-
-.description {
-  padding-left: 50px;
-}
-
-.date-time-and-tags {
-  display: flex;
-}
-
-.time-and-date {
-  margin-left: 9vh;
-}
-
-.date {
-  margin-top: 3vh;
-  padding-left: 10px;
-  /* background-color: #99C2FF; */
-}
-
-.date label {
-  background-color: #99c2ff;
-  border-radius: 3px;
-}
-
-.date input {
-  margin-left: 10px;
-  border-radius: 10px;
-}
-
-.time {
-  margin-top: 2vh;
-  display: flex;
-}
-
-.start-time {
-  margin-top: 1vh;
-  padding-left: 10px;
-  /* background-color: #99C2FF; */
-}
-
-.start-time label {
-  background-color: #99c2ff;
-  border-radius: 3px;
-}
-
-.start-time input {
-  margin-left: 10px;
-  border-radius: 10px;
-}
-
-.end-time {
-  margin-top: 1vh;
-  margin-left: 50px;
-  /* background-color: #99C2FF; */
-}
-
-.end-time label {
-  background-color: #99c2ff;
-  border-radius: 3px;
-}
-
-.end-time input {
-  margin-left: 10px;
-  border-radius: 10px;
+@media screen and (max-width: 768px) {
+  .task-list-item {
+    padding: 7.5px 10px;
+  }
+  .task-list-item h5 {
+    font-size: 16px;
+  }
 }

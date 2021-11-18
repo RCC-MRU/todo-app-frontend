@@ -38,22 +38,6 @@ body {
   font-weight: 600;
 }
 
-/* header button is used once as a login button in header */
-.btn-header {
-  background-color: var(--white-color);
-  color: var(--blue-color-dark);
-  width: 100%;
-  /* margin: 10px 0; */
-  padding: 0.5rem 1rem;
-  /* border-radius: 50px; */
-  /* font-size: 18px; */
-}
-
-.btn-header:hover {
-  background-color: var(--white-color);
-  color: var(--blue-color-dark);
-}
-
 .DashboardButton {
   border-radius: 150px;
   color: white;
@@ -61,6 +45,12 @@ body {
   border: none;
   padding: 15px;
   margin: 9px;
+}
+
+.DashboardButton:hover {
+  color: white;
+  background-color: var(--blue-color-dark);
+  box-shadow: 0 2px 5px var(--blue-color-dark);
 }
 
 /* ==================== Header ==================== */
@@ -72,18 +62,21 @@ body {
 
 /* ==================== Footer ==================== */
 #copyright {
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
   text-align: center;
   background-color: var(--blue-color-dark);
   color: #ffffff;
   padding: 1rem 0;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   #copyright {
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
   }
-}
+} */

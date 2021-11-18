@@ -1,26 +1,45 @@
-import React, { useState, useEffect } from "react";
-import { getTaskList } from "../Utils/axios";
+import React, { useState, useEffect, useContext } from "react";
+import axios from "axios";
+import { TodoContext } from "../Utils/Context";
+import { BaseUrl } from "../Utils/BaseURL";
+
 const ShowTasksComponent = () => {
-  const [taskData, setTaskData] = useState();
+  const [taskData, setTaskData] = useState([]);
+  const contextData = useContext(TodoContext);
+
   useEffect(() => {
-    getTaskList()
-      .then((data) => console.log(data.data))
-      .catch((err) => console.log(err));
-  });
+    axios({
+      url: `${BaseUrl}/todos/display`,
+      method: "GET",
+      headers: {
+        authorization: `Bearer ${contextData?.credentials?.token}`,
+      },
+    })
+      .then((resp) => {
+        console.log(resp.data.data);
+        setTaskData(resp.data.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [contextData?.credentials?.token]);
 
   return (
     <React.Fragment>
       <div className="container white-box">
-        <div className="row">
-          <div className="important-tasks col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <p>Important task</p>
-          </div>
-          <div className="tasks col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <p>TASK-1</p>
-            <p>TASK-2</p>
-            <p>TASK-3</p>
-            <p></p>
-          </div>
+        <h3 style={{ marginBottom: 15 }}>Task List</h3>
+        <div className="task-list">
+          {taskData.length > 0 ? (
+            taskData.map((tasks) => {
+              return (
+                <div className="task-list-item">
+                  <h5>{tasks.task_title}</h5>
+                </div>
+              );
+            })
+          ) : (
+            <div>No tasks</div>
+          )}
         </div>
       </div>
     </React.Fragment>

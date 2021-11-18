@@ -12,8 +12,7 @@ const DashBoardComponent = () => {
         <div className="row">
           <div
             className="col-md-8 "
-            style={{ display: "grid", placeItems: "center" }}
-          >
+            style={{ display: "grid", placeItems: "center" }}>
             <img
               src={process.env.PUBLIC_URL + "/images/dashBoard.svg"}
               alt="Homepage"
@@ -27,14 +26,13 @@ const DashBoardComponent = () => {
               to="/description-page"
               type="button"
               className="btn DashboardButton"
-              tooltip="Add Todo"
-            >
+              tooltip="Add Todo">
               <BsPlusCircle size={30} />
             </Link>
             <Link type="button" className="btn DashboardButton" to="/">
               <MdDoneAll size={30} />
             </Link>
-            <Link type="button" className="btn DashboardButton" to="/">
+            <Link type="button" className="btn DashboardButton" to="/todos">
               <FaList size={30} />
             </Link>
           </div>
