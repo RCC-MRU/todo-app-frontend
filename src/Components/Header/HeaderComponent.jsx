@@ -19,7 +19,7 @@ const HeaderComponent = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-nav">
         <div className="container">
           <a className="navbar-brand" href="/">
-            RCC Todo Application
+            Time Management TODO
           </a>
 
           <button
@@ -56,7 +56,7 @@ const HeaderComponent = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-nav">
         <div className="container">
           <a className="navbar-brand" href="/">
-            RCC Todo Application
+          Time Management TODO
           </a>
 
           <button
