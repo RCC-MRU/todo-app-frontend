@@ -25,4 +25,15 @@ const userLogin = async (loginDetails) => {
   return response;
 };
 
+const addTodoData = async(todoUserData)=>{
+  let response=await axios({
+    method:"POST",
+    url:`${BaseUrl}/todos/add`,
+    data: todoUserData,
+
+  });
+
+  return response;
+};
+
 export { userSignup, userLogin };
