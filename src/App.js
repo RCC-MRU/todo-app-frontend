@@ -9,7 +9,7 @@ import Header from "./Components/Header/HeaderComponent";
 import Footer from "./Components/FooterComponent";
 import ShowTasksComponent from "./Components/ShowTasksComponent";
 import TodoComponent from "./Components/TodoComponent";
-
+import ShowCompletedTask from "./Components/ShowCompletedTask";
 import { TodoContext } from "./Utils/Context";
 import { ToastContainer } from "react-toastify";
 
@@ -55,6 +55,9 @@ const App = () => {
           </Route>
           <Route exact path="/description-page">
             <TodoComponent />
+          </Route>
+          <Route exact path="/completed-task">
+            <ShowCompletedTask />
           </Route>
           <Route exact path="/todos">
             <ShowTasksComponent />

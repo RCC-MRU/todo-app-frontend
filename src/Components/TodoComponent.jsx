@@ -1,16 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { MdDelete } from "react-icons/md";
 import { GoPlus } from "react-icons/go";
 import { BsCheckAll } from "react-icons/bs";
 
-
 const TodoComponent = () => {
+  const [todoData, setTodoData] = useState({
+    title: "",
+    endingTime: "",
+    description: "",
+  });
+
+  const handleChange = async (e) => {
+    console.log(todoData);
+    setTodoData({
+      todoData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // TODO: add the axios code here
+  };
+
   return (
     <React.Fragment>
       <div className="container">
         <div className="white-box">
-          <form action="/">
+          <form method="POST" onSubmit={handleSubmit}>
             <div className="row">
               <div className="col-md-9">
                 <section className="form-group">
@@ -22,6 +41,7 @@ const TodoComponent = () => {
                     id="title"
                     className="form-control text-field"
                     placeholder="Todo title"
+                    onChange={handleChange}
                   />
                 </section>
 
@@ -30,8 +50,9 @@ const TodoComponent = () => {
                   <input
                     type="datetime-local"
                     id="ending-time"
-                    name="ending-time"
+                    name="endingTime"
                     className="form-control text-field"
+                    onChange={handleChange}
                   />
                 </section>
 
@@ -44,13 +65,16 @@ const TodoComponent = () => {
                     rows="4"
                     placeholder="Todo description"
                     className="form-control text-field"
+                    onChange={handleChange}
                     style={{ resize: "none" }}
-                    maxLength={200}
-                  ></textarea>
+                    maxLength={200}></textarea>
                 </section>
 
                 <div className="form-group">
-                  <button className="btn btn-blue-dark" type="submit">
+                  <button
+                    className="btn btn-blue-dark"
+                    type="submit"
+                    name="submit">
                     <GoPlus size={20} /> &nbsp; Add Todo
                   </button>
                 </div>
