@@ -1,20 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { MdDelete } from "react-icons/md";
 import { GoPlus } from "react-icons/go";
 import { BsCheckAll } from "react-icons/bs";
+import axios from "axios";
+import { TodoContext } from "../Utils/Context";
+import { BaseUrl } from "../Utils/BaseURL";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const TodoComponent = () => {
   const [todoData, setTodoData] = useState({
-    title: "",
+    taskTitle: "",
     endingTime: "",
     description: "",
   });
 
+  const contextData = useContext(TodoContext);
+
   const handleChange = async (e) => {
     console.log(todoData);
     setTodoData({
-      todoData,
+      ...todoData,
       [e.target.name]: e.target.value,
     });
   };
@@ -22,7 +29,25 @@ const TodoComponent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log(todoData);
+
     // TODO: add the axios code here
+    axios({
+      url: `${BaseUrl}/todos/add`,
+      method: "POST",
+      data: todoData,
+      headers: {
+        authorization: `Bearer ${contextData?.credentials?.token}`,
+      },
+    })
+      .then((resp) => {
+        console.log(resp.data);
+        toast.success(resp.data.message);
+      })
+      .catch((err) => {
+        console.log(err);
+        toast.error(err.response.data.message);
+      });
   };
 
   return (
@@ -37,11 +62,12 @@ const TodoComponent = () => {
 
                   <input
                     type="text"
-                    name="title"
+                    name="taskTitle"
                     id="title"
                     className="form-control text-field"
                     placeholder="Todo title"
                     onChange={handleChange}
+                    required
                   />
                 </section>
 
@@ -53,6 +79,7 @@ const TodoComponent = () => {
                     name="endingTime"
                     className="form-control text-field"
                     onChange={handleChange}
+                    required
                   />
                 </section>
 

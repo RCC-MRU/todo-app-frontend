@@ -35,7 +35,7 @@ const App = () => {
       <TodoContext.Provider value={{ credentials, setCredentials }}>
         <ToastContainer
           position="bottom-left"
-          autoClose={5000}
+          autoClose={2000}
           draggable={true}
           theme="colored"
         />
